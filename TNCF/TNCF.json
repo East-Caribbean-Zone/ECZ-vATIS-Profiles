@@ -1973,7 +1973,7 @@
           "name": "RWY 11 - ILS Z",
           "airportConditions": "",
           "notams": "",
-          "template": "",
+          "template": "BEATRIX INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT ILS Z APP RWY 11, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
