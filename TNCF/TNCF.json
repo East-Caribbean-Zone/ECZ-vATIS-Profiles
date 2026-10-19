@@ -1945,7 +1945,7 @@
         "notams": {
           "template": {
             "text": "NOTAMS: {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "voice": "NOTICES TO AIR MEN: {notams}"
           }
         },
         "closingStatement": {
@@ -3979,7 +3979,7 @@
         "notams": {
           "template": {
             "text": "NOTAMS: {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "voice": "NOTICES TO AIR MEN: {notams}"
           }
         },
         "closingStatement": {
@@ -6014,7 +6014,7 @@
         "notams": {
           "template": {
             "text": "NOTAMS: {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "voice": "NOTICES TO AIR MEN: {notams}"
           }
         },
         "closingStatement": {
@@ -8029,7 +8029,7 @@
         "notams": {
           "template": {
             "text": "NOTAMS: {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "voice": "NOTICES TO AIR MEN: {notams}"
           }
         },
         "closingStatement": {
