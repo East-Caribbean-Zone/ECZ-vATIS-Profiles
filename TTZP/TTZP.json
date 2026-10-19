@@ -1918,8 +1918,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "A{altimeter} ({altimeter|text})",
-            "voice": "ALTIMETER {altimeter}"
+            "text": "QNH {altimeter}",
+            "voice": "QNH {altimeter}"
           }
         },
         "trend": {
@@ -3995,8 +3995,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "A{altimeter} ({altimeter|text})",
-            "voice": "ALTIMETER {altimeter}"
+            "text": "QNH {altimeter}",
+            "voice": "QNH {altimeter}"
           }
         },
         "trend": {
@@ -6057,8 +6057,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "A{altimeter} ({altimeter|text})",
-            "voice": "ALTIMETER {altimeter}"
+            "text": "QNH {altimeter}",
+            "voice": "QNH {altimeter}"
           }
         },
         "trend": {
@@ -8102,8 +8102,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "A{altimeter} ({altimeter|text})",
-            "voice": "ALTIMETER {altimeter}"
+            "text": "QNH {altimeter}",
+            "voice": "QNH {altimeter}"
           }
         },
         "trend": {
@@ -10164,8 +10164,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "A{altimeter} ({altimeter|text})",
-            "voice": "ALTIMETER {altimeter}"
+            "text": "QNH {altimeter}",
+            "voice": "QNH {altimeter}"
           }
         },
         "trend": {
@@ -12209,8 +12209,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "A{altimeter} ({altimeter|text})",
-            "voice": "ALTIMETER {altimeter}"
+            "text": "QNH {altimeter}",
+            "voice": "QNH {altimeter}"
           }
         },
         "trend": {
@@ -14305,8 +14305,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "A{altimeter} ({altimeter|text})",
-            "voice": "ALTIMETER {altimeter}"
+            "text": "QNH {altimeter}",
+            "voice": "QNH {altimeter}"
           }
         },
         "trend": {
@@ -16350,8 +16350,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "A{altimeter} ({altimeter|text})",
-            "voice": "ALTIMETER {altimeter}"
+            "text": "QNH {altimeter}",
+            "voice": "QNH {altimeter}"
           }
         },
         "trend": {
@@ -18355,8 +18355,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "A{altimeter} ({altimeter|text})",
-            "voice": "ALTIMETER {altimeter}"
+            "text": "QNH {altimeter}",
+            "voice": "QNH {altimeter}"
           }
         },
         "trend": {
