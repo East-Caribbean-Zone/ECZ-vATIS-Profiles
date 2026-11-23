@@ -32,7 +32,7 @@
           },
           "standard": {
             "template": {
-              "text": "WIND {wind_dir} DEG {wind_spd} KT",
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT",
               "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS"
             }
           },
@@ -1954,7 +1954,7 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
+            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
           }
         }
@@ -2109,7 +2109,7 @@
           },
           "standard": {
             "template": {
-              "text": "WIND {wind_dir} DEG {wind_spd} KT",
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT",
               "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS"
             }
           },
@@ -4031,7 +4031,7 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
+            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
           }
         }
@@ -4171,7 +4171,7 @@
           },
           "standard": {
             "template": {
-              "text": "WIND {wind_dir} DEG {wind_spd} KT",
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT",
               "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS"
             }
           },
@@ -6093,7 +6093,7 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
+            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
           }
         }
@@ -6216,7 +6216,7 @@
           },
           "standard": {
             "template": {
-              "text": "WIND {wind_dir} DEG {wind_spd} KT",
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT",
               "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS"
             }
           },
@@ -8138,7 +8138,7 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
+            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
           }
         }
@@ -8278,7 +8278,7 @@
           },
           "standard": {
             "template": {
-              "text": "WIND {wind_dir} DEG {wind_spd} KT",
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT",
               "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS"
             }
           },
@@ -10200,7 +10200,7 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
+            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
           }
         }
@@ -10323,7 +10323,7 @@
           },
           "standard": {
             "template": {
-              "text": "WIND {wind_dir} DEG {wind_spd} KT",
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT",
               "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS"
             }
           },
@@ -12245,7 +12245,7 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
+            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
           }
         }
@@ -12419,7 +12419,7 @@
           },
           "standard": {
             "template": {
-              "text": "WIND {wind_dir} DEG {wind_spd} KT",
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT",
               "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS"
             }
           },
@@ -14341,7 +14341,7 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
+            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
           }
         }
@@ -14464,7 +14464,7 @@
           },
           "standard": {
             "template": {
-              "text": "WIND {wind_dir} DEG {wind_spd} KT",
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT",
               "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS"
             }
           },
@@ -16386,7 +16386,7 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
+            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
           }
         }
@@ -16469,7 +16469,7 @@
           },
           "standard": {
             "template": {
-              "text": "WIND {wind_dir} DEG {wind_spd} KT",
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT",
               "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS"
             }
           },
@@ -18391,7 +18391,7 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
+            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
           }
         }
