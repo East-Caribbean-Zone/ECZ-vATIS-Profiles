@@ -2,7 +2,7 @@
   "name": "TTZP 2611",
   "id": "3ac46d26-4782-4cb5-ba17-520ce13f1809",
   "updateUrl": "https://raw.githubusercontent.com/East-Caribbean-Zone/ECZ-vATIS-Profiles/refs/heads/main/TTZP/TTZP.json",
-  "updateSerial": 2026112502,
+  "updateSerial": 2026112503,
   "stations": [
     {
       "id": "e8aaa732-d192-44d6-b442-fb9adb8bc572",
@@ -1963,7 +1963,7 @@
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male",
+        "voice": "British Male (Malcolm)",
         "speechRate": 180
       },
       "presets": [
@@ -4032,7 +4032,7 @@
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male",
+        "voice": "British Male (Malcolm)",
         "speechRate": 180
       },
       "presets": [
@@ -6106,7 +6106,7 @@
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male",
+        "voice": "British Male (Malcolm)",
         "speechRate": 180
       },
       "presets": [
@@ -8158,7 +8158,7 @@
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male",
+        "voice": "British Male (Malcolm)",
         "speechRate": 180
       },
       "presets": [
@@ -10237,7 +10237,7 @@
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male",
+        "voice": "British Male (Malcolm)",
         "speechRate": 180
       },
       "presets": [
@@ -12304,7 +12304,7 @@
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male",
+        "voice": "British Male (Malcolm)",
         "speechRate": 180
       },
       "presets": [
@@ -14412,7 +14412,7 @@
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male",
+        "voice": "British Male (Malcolm)",
         "speechRate": 180
       },
       "presets": [
@@ -16469,7 +16469,7 @@
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male",
+        "voice": "British Male (Malcolm)",
         "speechRate": 180
       },
       "presets": [
@@ -18481,7 +18481,7 @@
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male",
+        "voice": "British Male (Malcolm)",
         "speechRate": 180
       },
       "presets": [
