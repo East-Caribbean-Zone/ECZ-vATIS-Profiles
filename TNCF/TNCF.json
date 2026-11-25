@@ -2,7 +2,7 @@
   "name": "TNCF 2611",
   "id": "345f0a6a-28c4-4666-8609-80d00a46e727",
   "updateUrl": "https://raw.githubusercontent.com/East-Caribbean-Zone/ECZ-vATIS-Profiles/refs/heads/main/TNCF/TNCF.json",
-  "updateSerial": 2026112503,
+  "updateSerial": 2026112504,
   "stations": [
     {
       "id": "486d5ce2-44a4-4f60-8299-4643587a6152",
@@ -2041,7 +2041,14 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "TNR-4 VADER PIET ACTIVE SFC - 5000FT MSL",
+          "ordinal": 1,
+          "enabled": true,
+          "onlineCondition": "1100z-2000z"
+        }
+      ]
     },
     {
       "id": "18f320fd-9b8d-4b2b-ae06-df584ecb6873",
