@@ -2,7 +2,7 @@
   "name": "TNCF 2611",
   "id": "345f0a6a-28c4-4666-8609-80d00a46e727",
   "updateUrl": "https://raw.githubusercontent.com/East-Caribbean-Zone/ECZ-vATIS-Profiles/refs/heads/main/TNCF/TNCF.json",
-  "updateSerial": 2026112504,
+  "updateSerial": 2026112505,
   "stations": [
     {
       "id": "486d5ce2-44a4-4f60-8299-4643587a6152",
@@ -2038,12 +2038,27 @@
           "variableName": "ILS_Z",
           "text": "ILS Z",
           "voice": "I LS ZULU"
+        },
+        {
+          "variableName": "SFC",
+          "text": "SFC",
+          "voice": "SURFACE"
+        },
+        {
+          "variableName": "FT",
+          "text": "FT",
+          "voice": "FEET"
+        },
+        {
+          "variableName": "MSL",
+          "text": "MSL",
+          "voice": "MEAN SEA LEVEL"
         }
       ],
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
-          "text": "TNR-4 VADER PIET ACTIVE SFC - 5000FT MSL",
+          "text": "TNR-4 VADER PIET ACTIVE SFC - 5000 FT MSL",
           "ordinal": 1,
           "enabled": true,
           "onlineCondition": "1100z-2000z"
