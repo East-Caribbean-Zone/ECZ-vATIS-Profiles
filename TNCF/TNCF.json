@@ -2,7 +2,7 @@
   "name": "TNCF 2610",
   "id": "345f0a6a-28c4-4666-8609-80d00a46e727",
   "updateUrl": "https://raw.githubusercontent.com/East-Caribbean-Zone/ECZ-vATIS-Profiles/refs/heads/main/TNCF/TNCF.json",
-  "updateSerial": 2026100601,
+  "updateSerial": 2026112501,
   "stations": [
     {
       "id": "486d5ce2-44a4-4f60-8299-4643587a6152",
@@ -1973,7 +1973,7 @@
           "name": "RWY 11 - ILS Z",
           "airportConditions": "",
           "notams": "",
-          "template": "BEATRIX INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT ILS Z APP RWY 11, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "BEATRIX INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT @ILS_Z APP RWY 11, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -2033,6 +2033,11 @@
           "variableName": "HPA",
           "text": "HPA",
           "voice": "HECTOPASCALS"
+        },
+        {
+          "variableName": "ILS_Z",
+          "text": "ILS Z",
+          "voice": "I LS ZULU"
         }
       ],
       "airportConditionDefinitions": [],

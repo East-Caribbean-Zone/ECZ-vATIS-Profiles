@@ -2,7 +2,7 @@
   "name": "TTZP",
   "id": "3ac46d26-4782-4cb5-ba17-520ce13f1809",
   "updateUrl": "https://raw.githubusercontent.com/East-Caribbean-Zone/ECZ-vATIS-Profiles/refs/heads/main/TTZP/TTZP.json",
-  "updateSerial": 2026100601,
+  "updateSerial": 2026112501,
   "stations": [
     {
       "id": "e8aaa732-d192-44d6-b442-fb9adb8bc572",
@@ -16,9 +16,6 @@
       },
       "atisFormat": {
         "observationTime": {
-          "standardUpdateTime": [
-            0
-          ],
           "template": {
             "text": "{time}Z",
             "voice": "{time} ZULU {special}"
@@ -27,8 +24,8 @@
         "surfaceWind": {
           "speakLeadingZero": false,
           "magneticVariation": {
-            "enabled": false,
-            "magneticDegrees": 0
+            "enabled": true,
+            "magneticDegrees": 10
           },
           "standard": {
             "template": {
@@ -38,20 +35,20 @@
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
-              "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT G{wind_gust} KT",
+              "voice": "WIND {wind_dir} DEGREES {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
-              "voice": "WIND VARIABLE AT {wind_spd}"
+              "text": "VRB{wind_spd} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} KNOTS"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
-              "voice": "WIND VARIABLE AT {wind_spd} GUSTS {wind_gust}"
+              "text": "VRB {wind_spd} DEG, G{wind_gust} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variableDirection": {
@@ -1296,7 +1293,7 @@
             },
             "GS": {
               "text": "GS",
-              "spoken": "small hail"
+              "spoken": "small hail, snow pellets"
             },
             "HZ": {
               "text": "HZ",
@@ -1895,7 +1892,7 @@
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "{clouds}",
+            "text": "CLD {clouds}",
             "voice": "{clouds}"
           }
         },
@@ -1947,15 +1944,15 @@
         },
         "notams": {
           "template": {
-            "text": "NOTAMS... {notams}",
+            "text": "NOTAMS: {notams}",
             "voice": "NOTICES TO AIR MEN: {notams}"
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
-            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}.",
+            "voice": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter|word}."
           }
         }
       },
@@ -2060,7 +2057,7 @@
         {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "AR-NAV"
+          "voice": "ARNAV"
         },
         {
           "variableName": "ILS",
@@ -2071,11 +2068,6 @@
           "variableName": "HPA",
           "text": "HPA",
           "voice": "HECTOPASCALS"
-        },
-        {
-          "variableName": "NOTAMS",
-          "text": "NOTAMS",
-          "voice": "NOTICE TO AIRMEN"
         }
       ],
       "airportConditionDefinitions": [],
@@ -2093,9 +2085,6 @@
       },
       "atisFormat": {
         "observationTime": {
-          "standardUpdateTime": [
-            0
-          ],
           "template": {
             "text": "{time}Z",
             "voice": "{time} ZULU {special}"
@@ -2104,8 +2093,8 @@
         "surfaceWind": {
           "speakLeadingZero": false,
           "magneticVariation": {
-            "enabled": false,
-            "magneticDegrees": 0
+            "enabled": true,
+            "magneticDegrees": 10
           },
           "standard": {
             "template": {
@@ -2115,20 +2104,20 @@
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
-              "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT G{wind_gust} KT",
+              "voice": "WIND {wind_dir} DEGREES {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
-              "voice": "WIND VARIABLE AT {wind_spd}"
+              "text": "VRB{wind_spd} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} KNOTS"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
-              "voice": "WIND VARIABLE AT {wind_spd} GUSTS {wind_gust}"
+              "text": "VRB {wind_spd} DEG, G{wind_gust} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variableDirection": {
@@ -3373,7 +3362,7 @@
             },
             "GS": {
               "text": "GS",
-              "spoken": "small hail"
+              "spoken": "small hail, snow pellets"
             },
             "HZ": {
               "text": "HZ",
@@ -3972,7 +3961,7 @@
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "{clouds}",
+            "text": "CLD {clouds}",
             "voice": "{clouds}"
           }
         },
@@ -4024,15 +4013,15 @@
         },
         "notams": {
           "template": {
-            "text": "NOTAMS... {notams}",
+            "text": "NOTAMS: {notams}",
             "voice": "NOTICES TO AIR MEN: {notams}"
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
-            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}.",
+            "voice": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter|word}."
           }
         }
       },
@@ -4040,7 +4029,7 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 132200000,
       "idsEndpoint": "",
-      "useDecimalTerminology": false,
+      "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "US Male",
@@ -4053,7 +4042,7 @@
           "name": "RWY 11 - ILS Z",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "",
-          "template": "ROBINSON INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT ILS Z APP RWY 11, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 55. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "ROBINSON INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT @ILS_Z APP RWY 11, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 55. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -4137,7 +4126,22 @@
         {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "AR-NAV"
+          "voice": "ARNAV"
+        },
+        {
+          "variableName": "ILS",
+          "text": "ILS",
+          "voice": "I LS"
+        },
+        {
+          "variableName": "HPA",
+          "text": "HPA",
+          "voice": "HECTOPASCALS"
+        },
+        {
+          "variableName": "ILS_Z",
+          "text": "ILS Z",
+          "voice": "I LS ZULU"
         }
       ],
       "airportConditionDefinitions": [],
@@ -4155,9 +4159,6 @@
       },
       "atisFormat": {
         "observationTime": {
-          "standardUpdateTime": [
-            0
-          ],
           "template": {
             "text": "{time}Z",
             "voice": "{time} ZULU {special}"
@@ -4166,8 +4167,8 @@
         "surfaceWind": {
           "speakLeadingZero": false,
           "magneticVariation": {
-            "enabled": false,
-            "magneticDegrees": 0
+            "enabled": true,
+            "magneticDegrees": 10
           },
           "standard": {
             "template": {
@@ -4177,20 +4178,20 @@
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
-              "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT G{wind_gust} KT",
+              "voice": "WIND {wind_dir} DEGREES {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
-              "voice": "WIND VARIABLE AT {wind_spd}"
+              "text": "VRB{wind_spd} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} KNOTS"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
-              "voice": "WIND VARIABLE AT {wind_spd} GUSTS {wind_gust}"
+              "text": "VRB {wind_spd} DEG, G{wind_gust} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variableDirection": {
@@ -5435,7 +5436,7 @@
             },
             "GS": {
               "text": "GS",
-              "spoken": "small hail"
+              "spoken": "small hail, snow pellets"
             },
             "HZ": {
               "text": "HZ",
@@ -6034,7 +6035,7 @@
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "{clouds}",
+            "text": "CLD {clouds}",
             "voice": "{clouds}"
           }
         },
@@ -6086,15 +6087,15 @@
         },
         "notams": {
           "template": {
-            "text": "NOTAMS... {notams}",
+            "text": "NOTAMS: {notams}",
             "voice": "NOTICES TO AIR MEN: {notams}"
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
-            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}.",
+            "voice": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter|word}."
           }
         }
       },
@@ -6102,7 +6103,7 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 126150000,
       "idsEndpoint": "",
-      "useDecimalTerminology": false,
+      "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "US Male",
@@ -6115,7 +6116,7 @@
           "name": "RWY 10 - RNAV",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "BIRD ACTIVITY IN THE VICINITY.",
-          "template": "HEWANORRA INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNAV APP RWY 10, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "HEWANORRA INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNAV APP RWY 10, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -6132,7 +6133,7 @@
           "name": "RWY 10 - VOR DME",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "BIRD ACTIVITY IN THE VICINITY.",
-          "template": "HEWANORRA INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT VOR DME APP RWY 10, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "HEWANORRA INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT VOR DME APP RWY 10, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -6149,7 +6150,7 @@
           "name": "RWY 28 - RNAV",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "BIRD ACTIVITY IN THE VICINITY.",
-          "template": "HEWANORRA INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNAV APP RWY 28, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "HEWANORRA INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNAV APP RWY 28, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -6166,7 +6167,7 @@
           "name": "RWY 28 - VOR DME",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "BIRD ACTIVITY IN THE VICINITY.",
-          "template": "HEWANORRA INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT VOR DME APP RWY 28, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "HEWANORRA INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT VOR DME APP RWY 28, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -6182,7 +6183,17 @@
         {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "AR-NAV"
+          "voice": "ARNAV"
+        },
+        {
+          "variableName": "ILS",
+          "text": "ILS",
+          "voice": "I LS"
+        },
+        {
+          "variableName": "HPA",
+          "text": "HPA",
+          "voice": "HECTOPASCALS"
         }
       ],
       "airportConditionDefinitions": [],
@@ -6200,9 +6211,6 @@
       },
       "atisFormat": {
         "observationTime": {
-          "standardUpdateTime": [
-            0
-          ],
           "template": {
             "text": "{time}Z",
             "voice": "{time} ZULU {special}"
@@ -6211,8 +6219,8 @@
         "surfaceWind": {
           "speakLeadingZero": false,
           "magneticVariation": {
-            "enabled": false,
-            "magneticDegrees": 0
+            "enabled": true,
+            "magneticDegrees": 10
           },
           "standard": {
             "template": {
@@ -6222,20 +6230,20 @@
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
-              "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT G{wind_gust} KT",
+              "voice": "WIND {wind_dir} DEGREES {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
-              "voice": "WIND VARIABLE AT {wind_spd}"
+              "text": "VRB{wind_spd} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} KNOTS"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
-              "voice": "WIND VARIABLE AT {wind_spd} GUSTS {wind_gust}"
+              "text": "VRB {wind_spd} DEG, G{wind_gust} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variableDirection": {
@@ -7480,7 +7488,7 @@
             },
             "GS": {
               "text": "GS",
-              "spoken": "small hail"
+              "spoken": "small hail, snow pellets"
             },
             "HZ": {
               "text": "HZ",
@@ -8079,7 +8087,7 @@
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "{clouds}",
+            "text": "CLD {clouds}",
             "voice": "{clouds}"
           }
         },
@@ -8131,15 +8139,15 @@
         },
         "notams": {
           "template": {
-            "text": "NOTAMS... {notams}",
+            "text": "NOTAMS: {notams}",
             "voice": "NOTICES TO AIR MEN: {notams}"
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
-            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}.",
+            "voice": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter|word}."
           }
         }
       },
@@ -8147,10 +8155,10 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 132725000,
       "idsEndpoint": "",
-      "useDecimalTerminology": false,
+      "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "Default",
+        "voice": "US Male",
         "speechRate": 180
       },
       "presets": [
@@ -8160,7 +8168,7 @@
           "name": "RWY 09 - ILS Z",
           "airportConditions": "EXPECT RUNWAY HEADING ON DEPARTURE. VFR AIRCRAFT SAY DIRECTION OF FLIGHT. ALL AIRCRAFT EXPECT CLEARANCE DURING TAXI. ADVISE READY FOR PUSH AND START ON INITIAL CONTACT.",
           "notams": "",
-          "template": "ADAMS INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT ILS Z APP RWY 09, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "ADAMS INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT @ILS_Z APP RWY 09, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8194,7 +8202,7 @@
           "name": "RWY 09 - VOR Z",
           "airportConditions": "EXPECT RUNWAY HEADING ON DEPARTURE. VFR AIRCRAFT SAY DIRECTION OF FLIGHT. ALL AIRCRAFT EXPECT CLEARANCE DURING TAXI. ADVISE READY FOR PUSH AND START ON INITIAL CONTACT.",
           "notams": "",
-          "template": "ADAMS INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT VOR Z APP RWY 09, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "ADAMS INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT @VOR_Z APP RWY 09, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8228,7 +8236,7 @@
           "name": "RWY 27 - VOR Z",
           "airportConditions": "EXPECT RUNWAY HEADING ON DEPARTURE. VFR AIRCRAFT SAY DIRECTION OF FLIGHT. ALL AIRCRAFT EXPECT CLEARANCE DURING TAXI. ADVISE READY FOR PUSH AND START ON INITIAL CONTACT.",
           "notams": "",
-          "template": "ADAMS INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT VOR Z APP RWY 27, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "ADAMS INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT @VOR_Z APP RWY 27, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8244,7 +8252,27 @@
         {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "AR-NAV"
+          "voice": "ARNAV"
+        },
+        {
+          "variableName": "ILS",
+          "text": "ILS",
+          "voice": "I LS"
+        },
+        {
+          "variableName": "HPA",
+          "text": "HPA",
+          "voice": "HECTOPASCALS"
+        },
+        {
+          "variableName": "ILS_Z",
+          "text": "ILS Z",
+          "voice": "I LS ZULU"
+        },
+        {
+          "variableName": "VOR_Z",
+          "text": "VOR Z",
+          "voice": "VOR ZULU"
         }
       ],
       "airportConditionDefinitions": [],
@@ -8262,9 +8290,6 @@
       },
       "atisFormat": {
         "observationTime": {
-          "standardUpdateTime": [
-            0
-          ],
           "template": {
             "text": "{time}Z",
             "voice": "{time} ZULU {special}"
@@ -8273,8 +8298,8 @@
         "surfaceWind": {
           "speakLeadingZero": false,
           "magneticVariation": {
-            "enabled": false,
-            "magneticDegrees": 0
+            "enabled": true,
+            "magneticDegrees": 10
           },
           "standard": {
             "template": {
@@ -8284,20 +8309,20 @@
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
-              "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT G{wind_gust} KT",
+              "voice": "WIND {wind_dir} DEGREES {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
-              "voice": "WIND VARIABLE AT {wind_spd}"
+              "text": "VRB{wind_spd} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} KNOTS"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
-              "voice": "WIND VARIABLE AT {wind_spd} GUSTS {wind_gust}"
+              "text": "VRB {wind_spd} DEG, G{wind_gust} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variableDirection": {
@@ -9542,7 +9567,7 @@
             },
             "GS": {
               "text": "GS",
-              "spoken": "small hail"
+              "spoken": "small hail, snow pellets"
             },
             "HZ": {
               "text": "HZ",
@@ -10141,7 +10166,7 @@
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "{clouds}",
+            "text": "CLD {clouds}",
             "voice": "{clouds}"
           }
         },
@@ -10193,15 +10218,15 @@
         },
         "notams": {
           "template": {
-            "text": "NOTAMS... {notams}",
+            "text": "NOTAMS: {notams}",
             "voice": "NOTICES TO AIR MEN: {notams}"
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
-            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}.",
+            "voice": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter|word}."
           }
         }
       },
@@ -10209,10 +10234,10 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 127600000,
       "idsEndpoint": "",
-      "useDecimalTerminology": false,
+      "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "Default",
+        "voice": "US Male",
         "speechRate": 180
       },
       "presets": [
@@ -10222,7 +10247,7 @@
           "name": "RWY 12 - ILS Z",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "BIRD ACTIVITY IN THE VICINITY.",
-          "template": "RAIZET INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT ILS Z APP RWY 12, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "RAIZET INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT @ILS_Z APP RWY 12, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -10239,7 +10264,7 @@
           "name": "RWY 12 - RNP Z",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "BIRD ACTIVITY IN THE VICINITY.",
-          "template": "RAIZET INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNP Z APP RWY 12, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "RAIZET INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT @RNP_Z APP RWY 12, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -10256,7 +10281,7 @@
           "name": "RWY 12 - RNP Y",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "BIRD ACTIVITY IN THE VICINITY.",
-          "template": "RAIZET INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNP Y APP RWY 12, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "RAIZET INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT @RNP_Y APP RWY 12, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -10273,7 +10298,7 @@
           "name": "RWY 30 - RNP",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "BIRD ACTIVITY IN THE VICINITY.",
-          "template": "RAIZET INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNP APP RWY 30, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "RAIZET INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNP APP RWY 30, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -10289,7 +10314,32 @@
         {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "AR-NAV"
+          "voice": "ARNAV"
+        },
+        {
+          "variableName": "ILS",
+          "text": "ILS",
+          "voice": "I LS"
+        },
+        {
+          "variableName": "HPA",
+          "text": "HPA",
+          "voice": "HECTOPASCALS"
+        },
+        {
+          "variableName": "ILS_Z",
+          "text": "ILS Z",
+          "voice": "I LS ZULU"
+        },
+        {
+          "variableName": "RNP_Y",
+          "text": "RNP Y",
+          "voice": "RNP YANKEE"
+        },
+        {
+          "variableName": "RNP_Z",
+          "text": "RNP Z",
+          "voice": "RNP ZULU"
         }
       ],
       "airportConditionDefinitions": [],
@@ -10307,9 +10357,6 @@
       },
       "atisFormat": {
         "observationTime": {
-          "standardUpdateTime": [
-            0
-          ],
           "template": {
             "text": "{time}Z",
             "voice": "{time} ZULU {special}"
@@ -10318,8 +10365,8 @@
         "surfaceWind": {
           "speakLeadingZero": false,
           "magneticVariation": {
-            "enabled": false,
-            "magneticDegrees": 0
+            "enabled": true,
+            "magneticDegrees": 10
           },
           "standard": {
             "template": {
@@ -10329,20 +10376,20 @@
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
-              "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT G{wind_gust} KT",
+              "voice": "WIND {wind_dir} DEGREES {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
-              "voice": "WIND VARIABLE AT {wind_spd}"
+              "text": "VRB{wind_spd} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} KNOTS"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
-              "voice": "WIND VARIABLE AT {wind_spd} GUSTS {wind_gust}"
+              "text": "VRB {wind_spd} DEG, G{wind_gust} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variableDirection": {
@@ -11587,7 +11634,7 @@
             },
             "GS": {
               "text": "GS",
-              "spoken": "small hail"
+              "spoken": "small hail, snow pellets"
             },
             "HZ": {
               "text": "HZ",
@@ -12186,7 +12233,7 @@
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "{clouds}",
+            "text": "CLD {clouds}",
             "voice": "{clouds}"
           }
         },
@@ -12238,15 +12285,15 @@
         },
         "notams": {
           "template": {
-            "text": "NOTAMS... {notams}",
+            "text": "NOTAMS: {notams}",
             "voice": "NOTICES TO AIR MEN: {notams}"
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
-            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}.",
+            "voice": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter|word}."
           }
         }
       },
@@ -12254,10 +12301,10 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 132400000,
       "idsEndpoint": "",
-      "useDecimalTerminology": false,
+      "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "Default",
+        "voice": "US Male",
         "speechRate": 180
       },
       "presets": [
@@ -12267,7 +12314,7 @@
           "name": "RWY 07 - RNAV",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "PROCEDURAL APPROACH NON-RADAR CONTROL ONLY. UNABLE RADAR VECTORS.",
-          "template": "V C BIRD INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNAV RWY 07, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "V C BIRD INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNAV APP RWY 07, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -12318,7 +12365,7 @@
           "name": "RWY 07 - NDB-A",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "PROCEDURAL APPROACH NON-RADAR CONTROL ONLY. UNABLE RADAR VECTORS.",
-          "template": "V C BIRD INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT NDB-A APP RWY 07. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "V C BIRD INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT @NDB_A APP RWY 07. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -12369,7 +12416,7 @@
           "name": "RWY 25 - NDB-A",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "PROCEDURAL APPROACH NON-RADAR CONTROL ONLY. UNABLE RADAR VECTORS.",
-          "template": "V C BIRD INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT NDB-A APP RWY 25. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "V C BIRD INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT @NDB_A APP RWY 25. \r\nTRANSITION LEVEL 40. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -12385,7 +12432,22 @@
         {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "AR-NAV"
+          "voice": "ARNAV"
+        },
+        {
+          "variableName": "ILS",
+          "text": "ILS",
+          "voice": "I LS"
+        },
+        {
+          "variableName": "HPA",
+          "text": "HPA",
+          "voice": "HECTOPASCALS"
+        },
+        {
+          "variableName": "NDB_A",
+          "text": "NDB-A",
+          "voice": "NDB ALPHA"
         }
       ],
       "airportConditionDefinitions": [],
@@ -12403,9 +12465,6 @@
       },
       "atisFormat": {
         "observationTime": {
-          "standardUpdateTime": [
-            0
-          ],
           "template": {
             "text": "{time}Z",
             "voice": "{time} ZULU {special}"
@@ -12414,8 +12473,8 @@
         "surfaceWind": {
           "speakLeadingZero": false,
           "magneticVariation": {
-            "enabled": false,
-            "magneticDegrees": 0
+            "enabled": true,
+            "magneticDegrees": 10
           },
           "standard": {
             "template": {
@@ -12425,20 +12484,20 @@
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
-              "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT G{wind_gust} KT",
+              "voice": "WIND {wind_dir} DEGREES {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
-              "voice": "WIND VARIABLE AT {wind_spd}"
+              "text": "VRB{wind_spd} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} KNOTS"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
-              "voice": "WIND VARIABLE AT {wind_spd} GUSTS {wind_gust}"
+              "text": "VRB {wind_spd} DEG, G{wind_gust} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variableDirection": {
@@ -13683,7 +13742,7 @@
             },
             "GS": {
               "text": "GS",
-              "spoken": "small hail"
+              "spoken": "small hail, snow pellets"
             },
             "HZ": {
               "text": "HZ",
@@ -14282,7 +14341,7 @@
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "{clouds}",
+            "text": "CLD {clouds}",
             "voice": "{clouds}"
           }
         },
@@ -14334,15 +14393,15 @@
         },
         "notams": {
           "template": {
-            "text": "NOTAMS... {notams}",
+            "text": "NOTAMS: {notams}",
             "voice": "NOTICES TO AIR MEN: {notams}"
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
-            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}.",
+            "voice": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter|word}."
           }
         }
       },
@@ -14350,10 +14409,10 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 127850000,
       "idsEndpoint": "",
-      "useDecimalTerminology": false,
+      "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "Default",
+        "voice": "US Male",
         "speechRate": 180
       },
       "presets": [
@@ -14363,7 +14422,7 @@
           "name": "RWY 10 - ILS Z",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "CIRCLING TO LAND UNAUTHORIZED NORTH OF RUNWAY. AIRCRAFT WITH WINGSPAN GREATER THAN 28 METERS CAN EXPECT RUNWAY ENTRY VIA B.",
-          "template": "MARTINIQUE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT ILS Z APP RWY 10, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "MARTINIQUE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT @ILS_Z APP RWY 10, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -14380,7 +14439,7 @@
           "name": "RWY 10 - RNP",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "CIRCLING TO LAND UNAUTHORIZED NORTH OF RUNWAY. AIRCRAFT WITH WINGSPAN GREATER THAN 28 METERS CAN EXPECT RUNWAY ENTRY VIA B.",
-          "template": "MARTINIQUE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNP APP RWY 10, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "MARTINIQUE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNP APP RWY 10, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -14397,7 +14456,7 @@
           "name": "RWY 28 - RNP",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "BIRD ACTIVITY IN THE VICINITY. CIRCLING TO LAND  UNAUTHORIZED NORTH OF RUNWAY.",
-          "template": "MARTINIQUE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNP APP RWY 28, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "MARTINIQUE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNP APP RWY 28, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -14414,7 +14473,7 @@
           "name": "RWY 28 - VOR",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "BIRD ACTIVITY IN THE VICINITY. CIRCLING TO LAND  UNAUTHORIZED NORTH OF RUNWAY.",
-          "template": "MARTINIQUE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT VOR APP RWY 28, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "MARTINIQUE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT VOR APP RWY 28, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -14430,7 +14489,22 @@
         {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "AR-NAV"
+          "voice": "ARNAV"
+        },
+        {
+          "variableName": "ILS",
+          "text": "ILS",
+          "voice": "I LS"
+        },
+        {
+          "variableName": "HPA",
+          "text": "HPA",
+          "voice": "HECTOPASCALS"
+        },
+        {
+          "variableName": "ILS_Z",
+          "text": "ILS Z",
+          "voice": "I LS ZULU"
         }
       ],
       "airportConditionDefinitions": [],
@@ -14448,9 +14522,6 @@
       },
       "atisFormat": {
         "observationTime": {
-          "standardUpdateTime": [
-            0
-          ],
           "template": {
             "text": "{time}Z",
             "voice": "{time} ZULU {special}"
@@ -14459,8 +14530,8 @@
         "surfaceWind": {
           "speakLeadingZero": false,
           "magneticVariation": {
-            "enabled": false,
-            "magneticDegrees": 0
+            "enabled": true,
+            "magneticDegrees": 10
           },
           "standard": {
             "template": {
@@ -14470,20 +14541,20 @@
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
-              "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT G{wind_gust} KT",
+              "voice": "WIND {wind_dir} DEGREES {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
-              "voice": "WIND VARIABLE AT {wind_spd}"
+              "text": "VRB{wind_spd} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} KNOTS"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
-              "voice": "WIND VARIABLE AT {wind_spd} GUSTS {wind_gust}"
+              "text": "VRB {wind_spd} DEG, G{wind_gust} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variableDirection": {
@@ -15728,7 +15799,7 @@
             },
             "GS": {
               "text": "GS",
-              "spoken": "small hail"
+              "spoken": "small hail, snow pellets"
             },
             "HZ": {
               "text": "HZ",
@@ -16327,7 +16398,7 @@
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "{clouds}",
+            "text": "CLD {clouds}",
             "voice": "{clouds}"
           }
         },
@@ -16379,15 +16450,15 @@
         },
         "notams": {
           "template": {
-            "text": "NOTAMS... {notams}",
+            "text": "NOTAMS: {notams}",
             "voice": "NOTICES TO AIR MEN: {notams}"
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
-            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}.",
+            "voice": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter|word}."
           }
         }
       },
@@ -16395,17 +16466,17 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 132600000,
       "idsEndpoint": "",
-      "useDecimalTerminology": false,
+      "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "Default",
+        "voice": "US Male",
         "speechRate": 180
       },
       "presets": [
         {
           "id": "6cd89b31-1ad8-470d-be54-9b9e3a82302b",
           "name": "RWY 09/27 - RNAV",
-          "template": "GEORGE CHARLES INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nDEPARTING RWY 27, ARRIVING RWY 09.\r\nEXPECT RNAV APP RWY 09, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "GEORGE CHARLES INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nDEPARTING RWY 27, ARRIVING RWY 09. \r\nEXPECT RNAV APP RWY 09, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -16419,7 +16490,7 @@
         {
           "id": "30fcb4ca-c738-42e7-b68a-ed8bb3dd3e7d",
           "name": "RWY 09/27 - NDB",
-          "template": "GEORGE CHARLES INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nDEPARTING RWY 27, ARRIVING RWY 09.\r\nEXPECT NDB APP RWY 09, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "GEORGE CHARLES INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nDEPARTING RWY 27, ARRIVING RWY 09. \r\nEXPECT NDB APP RWY 09, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 105. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -16435,7 +16506,17 @@
         {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "AR-NAV"
+          "voice": "ARNAV"
+        },
+        {
+          "variableName": "ILS",
+          "text": "ILS",
+          "voice": "I LS"
+        },
+        {
+          "variableName": "HPA",
+          "text": "HPA",
+          "voice": "HECTOPASCALS"
         }
       ],
       "airportConditionDefinitions": [],
@@ -16453,9 +16534,6 @@
       },
       "atisFormat": {
         "observationTime": {
-          "standardUpdateTime": [
-            0
-          ],
           "template": {
             "text": "{time}Z",
             "voice": "{time} ZULU {special}"
@@ -16464,8 +16542,8 @@
         "surfaceWind": {
           "speakLeadingZero": false,
           "magneticVariation": {
-            "enabled": false,
-            "magneticDegrees": 0
+            "enabled": true,
+            "magneticDegrees": 10
           },
           "standard": {
             "template": {
@@ -16475,20 +16553,20 @@
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
-              "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
+              "text": "WIND {wind_dir} DEG, {wind_spd} KT G{wind_gust} KT",
+              "voice": "WIND {wind_dir} DEGREES {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
-              "voice": "WIND VARIABLE AT {wind_spd}"
+              "text": "VRB{wind_spd} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} KNOTS"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
-              "voice": "WIND VARIABLE AT {wind_spd} GUSTS {wind_gust}"
+              "text": "VRB {wind_spd} DEG, G{wind_gust} KT",
+              "voice": "WIND VARIABLE AT {wind_spd} GUSTING {wind_gust} KNOTS"
             }
           },
           "variableDirection": {
@@ -17733,7 +17811,7 @@
             },
             "GS": {
               "text": "GS",
-              "spoken": "small hail"
+              "spoken": "small hail, snow pellets"
             },
             "HZ": {
               "text": "HZ",
@@ -18332,7 +18410,7 @@
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "{clouds}",
+            "text": "CLD {clouds}",
             "voice": "{clouds}"
           }
         },
@@ -18384,15 +18462,15 @@
         },
         "notams": {
           "template": {
-            "text": "NOTAMS... {notams}",
+            "text": "NOTAMS: {notams}",
             "voice": "NOTICES TO AIR MEN: {notams}"
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
-            "text": ".ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter}.",
+            "voice": "ADVISE ON INITIAL CONTACT YOU HAVE INFORMATION {letter|word}."
           }
         }
       },
@@ -18400,10 +18478,10 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 132550000,
       "idsEndpoint": "",
-      "useDecimalTerminology": false,
+      "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "Default",
+        "voice": "US Male",
         "speechRate": 180
       },
       "presets": [
@@ -18413,7 +18491,7 @@
           "name": "RWY 04 - RNAV",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "",
-          "template": "ARGYLE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNAV APP RWY 04, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "ARGYLE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT RNAV APP RWY 04, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 60. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -18430,7 +18508,7 @@
           "name": "RWY 04 - NDB",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "",
-          "template": "ARGYLE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT NDB CLOUDBREAK APP RWY 04, VISUAL APP ON REQUEST. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "ARGYLE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT NDB CLOUDBREAK APP RWY 04, VISUAL APP ON REQUEST. \r\nTRANSITION LEVEL 60. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -18447,7 +18525,7 @@
           "name": "RWY 22 - VISUAL",
           "airportConditions": "VFR AIRCRAFT SAY DIRECTION OF FLIGHT.",
           "notams": "",
-          "template": "ARGYLE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT VISUAL APP RWY 22.\r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
+          "template": "ARGYLE INFORMATION [ATIS_CODE]. \r\n[TIME]. \r\nEXPECT VISUAL APP RWY 22. \r\nTRANSITION LEVEL 60. \r\n[WIND]. \r\n[VIS]. \r\n[CLOUDS]. \r\n[TEMP]. \r\n[DEW]. \r\n[PRESSURE] HPA. \r\n[ARPT_COND] \r\n[NOTAMS] \r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -18463,7 +18541,17 @@
         {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "AR-NAV"
+          "voice": "ARNAV"
+        },
+        {
+          "variableName": "ILS",
+          "text": "ILS",
+          "voice": "I LS"
+        },
+        {
+          "variableName": "HPA",
+          "text": "HPA",
+          "voice": "HECTOPASCALS"
         }
       ],
       "airportConditionDefinitions": [],
