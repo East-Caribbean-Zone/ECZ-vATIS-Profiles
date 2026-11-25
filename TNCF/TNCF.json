@@ -2,7 +2,7 @@
   "name": "TNCF 2611",
   "id": "345f0a6a-28c4-4666-8609-80d00a46e727",
   "updateUrl": "https://raw.githubusercontent.com/East-Caribbean-Zone/ECZ-vATIS-Profiles/refs/heads/main/TNCF/TNCF.json",
-  "updateSerial": 2026112505,
+  "updateSerial": 2026112506,
   "stations": [
     {
       "id": "486d5ce2-44a4-4f60-8299-4643587a6152",
@@ -4095,10 +4095,32 @@
           "variableName": "HPA",
           "text": "HPA",
           "voice": "HECTOPASCALS"
+        },
+        {
+          "variableName": "SFC",
+          "text": "SFC",
+          "voice": "SURFACE"
+        },
+        {
+          "variableName": "FT",
+          "text": "FT",
+          "voice": "FEET"
+        },
+        {
+          "variableName": "MSL",
+          "text": "MSL",
+          "voice": "MEAN SEA LEVEL"
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "TNR-3 WACAO ACTIVE SFC - 5000 FT MSL",
+          "ordinal": 1,
+          "enabled": true,
+          "onlineCondition": "1300z-2000z"
+        }
+      ]
     },
     {
       "id": "496c31fb-c15d-44c9-9c93-ea51046db4cb",
